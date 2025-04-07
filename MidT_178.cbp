@@ -47,6 +47,7 @@
 			<Add directory="C:/Users/delar/OneDrive/Desktop/CSCI 178/common/lib" />
 		</Linker>
 		<Unit filename="include/_bullets.h" />
+		<Unit filename="include/_button.h" />
 		<Unit filename="include/_collisionckeck.h" />
 		<Unit filename="include/_common.h" />
 		<Unit filename="include/_enms.h" />
@@ -54,7 +55,6 @@
 		<Unit filename="include/_lightsetting.h" />
 		<Unit filename="include/_menu.h" />
 		<Unit filename="include/_model.h" />
-		<Unit filename="include/_object.h" />
 		<Unit filename="include/_parallax.h" />
 		<Unit filename="include/_player.h" />
 		<Unit filename="include/_scene.h" />
@@ -63,13 +63,13 @@
 		<Unit filename="include/_timer.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/_bullets.cpp" />
+		<Unit filename="src/_button.cpp" />
 		<Unit filename="src/_collisionckeck.cpp" />
 		<Unit filename="src/_enms.cpp" />
 		<Unit filename="src/_inputs.cpp" />
 		<Unit filename="src/_lightsetting.cpp" />
 		<Unit filename="src/_menu.cpp" />
 		<Unit filename="src/_model.cpp" />
-		<Unit filename="src/_object.cpp" />
 		<Unit filename="src/_parallax.cpp" />
 		<Unit filename="src/_player.cpp" />
 		<Unit filename="src/_scene.cpp" />

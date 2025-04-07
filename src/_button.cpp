@@ -1,6 +1,6 @@
-#include "_object.h"
-#
-_object::_object()
+#include "_button.h"
+
+_button::_button()
 {
     //ctor
     vert[0].x =-0.5; vert[0].y = -0.5; vert[0].z =-1.0;
@@ -9,19 +9,19 @@ _object::_object()
     vert[3].x =-0.5; vert[3].y =  0.5; vert[3].z =-1.0;
 }
 
-_object::~_object()
+_button::~_button()
 {
     //dtor
 }
-void _object::initObj(int x, int y, char* filename)
+void _button::initButt(int x, int y, char* filename)
 {
-    objPos.x = 0.0;
-    objPos.y = -0.2;
-    objPos.z = -1.0;
+    buttPos.x = 0.0;
+    buttPos.y = -0.2;
+    buttPos.z = -1.0;
 
-    objScl.x = 0.25;
-    objScl.y = 0.25;
-    objScl.z = 1.0;
+    buttScl.x = 0.25;
+    buttScl.y = 0.25;
+    buttScl.z = 1.0;
 
     frameX = x;
     frameY = y;
@@ -34,10 +34,10 @@ void _object::initObj(int x, int y, char* filename)
     yMin = yMax-1.0/(float)frameY;
 }
 
-void _object::drawObj()
+void _button::drawButt()
 {
-    glTranslatef(objPos.x, objPos.y, objPos.z);
-    glScalef(objScl.x, objScl.y, objScl.z);
+    glTranslatef(buttPos.x, buttPos.y, buttPos.z);
+    glScalef(buttScl.x, buttScl.y, buttScl.z);
 
     glColor3f(1.0,1.0,1.0);
     texture->textureBinder();
@@ -57,5 +57,4 @@ void _object::drawObj()
         glVertex3f(vert[3].x, vert[3].y, vert[3].z);
 
     glEnd();
-
 }

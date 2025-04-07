@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1743935978 source:c:\users\delar\onedrive\desktop\csci 178\midt_178\main.cpp
+1743999463 source:c:\users\delar\onedrive\desktop\csci 178\midt_178\main.cpp
 	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -200,7 +200,7 @@
 	<_textureloader.h>
 	<_timer.h>
 
-1743997106 source:c:\users\delar\onedrive\desktop\csci 178\midt_178\src\_scene.cpp
+1744000637 source:c:\users\delar\onedrive\desktop\csci 178\midt_178\src\_scene.cpp
 	"_scene.h"
 	"_lightsetting.h"
 	"_textureloader.h"
@@ -209,7 +209,7 @@
 	"_parallax.h"
 	"_player.h"
 	"_menu.h"
-	"_object.h"
+	"_button.h"
 	"_timer.h"
 
 1743642592 source:c:\users\delar\onedrive\desktop\csci 178\midt_178\src\_sounds.cpp
@@ -232,4 +232,11 @@
 1743989510 c:\users\delar\onedrive\desktop\csci 178\midt_178\include\_object.h
 	<_textureloader.h>
 	<_common.h>
+
+1744000069 c:\users\delar\onedrive\desktop\csci 178\midt_178\include\_button.h
+	<_textureloader.h>
+	<_common.h>
+
+1744000677 source:c:\users\delar\onedrive\desktop\csci 178\midt_178\src\_button.cpp
+	"_button.h"
 

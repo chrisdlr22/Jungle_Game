@@ -1,21 +1,21 @@
-#ifndef _OBJECT_H
-#define _OBJECT_H
+#ifndef _BUTTON_H
+#define _BUTTON_H
 #include <_textureloader.h>
 #include <_common.h>
 
-class _object
+class _button
 {
     public:
-        _object();
-        virtual ~_object();
+        _button();
+        virtual ~_button();
 
         _textureLoader *texture = new _textureLoader();
 
-        void initObj(int,int,char* filename);
-        void drawObj();
+        void initButt(int,int,char* filename);
+        void drawButt();
 
-        vec3 objPos;
-        vec3 objScl;
+        vec3 buttPos;
+        vec3 buttScl;
 
         vec3 vert[4];
 
@@ -27,4 +27,4 @@ class _object
     private:
 };
 
-#endif // _OBJECT_H
+#endif // _BUTTON_H

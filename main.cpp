@@ -21,6 +21,7 @@
 
 using namespace std;
 
+_scene *scene = new _scene; // creating a new class instance
 
 HDC			hDC=NULL;		// Private GDI Device Context
 HGLRC		hRC=NULL;		// Permanent Rendering Context
@@ -245,6 +246,7 @@ LRESULT CALLBACK WndProc(	HWND	hWnd,			// Handle For This Window
 							WPARAM	wParam,			// Additional Message Information
 							LPARAM	lParam)			// Additional Message Information
 {
+    //scene->windMsg(hWnd,uMsg,wParam,lParam);
 	switch (uMsg)									// Check For Windows Messages
 	{
 		case WM_ACTIVATE:							// Watch For Window Activate Message
@@ -360,16 +362,14 @@ int WINAPI WinMain(	HINSTANCE	hInstance,			// Instance
 		}
 		else										// If There Are No Messages
 		{
+		    Scene->drawScene();
+            SwapBuffers(hDC);
 			// Draw The Scene.  Watch For ESC Key And Quit Messages From DrawGLScene()
-		if (keys[VK_ESCAPE])
+		if (Scene->shouldExit())
 			{
 				done=TRUE;							// ESC or DrawGLScene Signalled A Quit
 			}
-			else									// Not Time To Quit, Update Screen
-			{
-			    Scene->drawScene();
-				SwapBuffers(hDC);				// Swap Buffers (Double Buffering)
-			}
+			// Swap Buffers (Double Buffering)
 
 			if (keys[VK_F1])						// Is F1 Being Pressed?
 			{

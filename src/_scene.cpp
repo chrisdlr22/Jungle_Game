@@ -6,7 +6,7 @@
 #include "_parallax.h"
 #include "_player.h"
 #include "_menu.h"
-#include "_object.h"
+#include "_button.h"
 #include "_timer.h"
 
 _inputs *KbMs = new _inputs();
@@ -15,10 +15,10 @@ _parallax *mainMenu = new _parallax();
 _parallax *helpMenu = new _parallax();
 _parallax *tutMap = new _parallax();
 _parallax *pauseMenu = new _parallax();
-_object *startButton =  new _object();
-_object *exitButton = new _object();
-_object *helpButton = new _object();
-//_object *titleBanner = new _object();
+_button *startButton =  new _button(); // I want to figure out how buttons work before implementing them
+_button *exitButton = new _button();
+_button *helpButton = new _button();
+//_button *titleBanner = new _button();
 _menu *menuState = new _menu();
 _player *player = new _player();
 bool isPaused = false;
