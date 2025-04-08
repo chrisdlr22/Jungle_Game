@@ -19,7 +19,7 @@
 #include<_common.h>	// Header File For Windows
 #include<_scene.h>
 
-using namespace std;
+using namespace std; // standard lib
 
 _scene *scene = new _scene; // creating a new class instance
 
